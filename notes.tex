@@ -1,10 +1,25 @@
 \documentclass[10pt,a4paper]{article}
+\usepackage[default]{sourcesanspro}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage[margin=0.3in]{geometry}
-\usepackage[compact]{titlesec}
+\usepackage[explicit]{titlesec}
 \usepackage{multicol}
 \usepackage{pdflscape}
+\usepackage{ncolor}
+\usepackage{enumitem}
+\setlist{nosep}
+
+\newcommand{\vrulefill}[1]{\leavevmode\leaders\hrule height#1\hfill\kern0pt}
+\newcommand{\firstletter}[1]{\primary#1\black}
+\titleformat{\section}{\bfseries\primary}{\thesection.}{0.75em}{#1\quad\vrulefill{0.12em}}
+\titlespacing*{\section}{0em}{0em}{0em}
+\titleformat{\subsection}{\bfseries\primary}{\thesection.\thesubsection.}{0.75em}{#1}
+\titlespacing*{\subsection}{0em}{0em}{0em}
+\def\myfirstletter#1{\primary#1\black}
+\DeclareRobustCommand{\FirstPrimaryLetter}[1]{\myfirstletter #1}
+\titleformat{\subsubsection}[hang]{\bfseries\large}{\thesection.\thesubsection.\thesubsubsection.}{0.75em}{\quad\FirstPrimaryLetter#1}
+\titlespacing*{\subsubsection}{0em}{0em}{0em}
 
 \begin{document}
 \begin{landscape}
@@ -99,6 +114,7 @@ Request $\rightarrow$ Entry $\rightarrow$ Planning $\rightarrow$ Overview (optio
 \subsection{Issue Classification}
 Major, Minor, Grammatical, Questions
 
+\vspace{1em}\textit{Written by Daniel Fitz}
 \end{multicols}
 \end{landscape}
 \end{document}
