@@ -1,0 +1,104 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[margin=0.3in]{geometry}
+\usepackage[compact]{titlesec}
+\usepackage{multicol}
+\usepackage{pdflscape}
+
+\begin{document}
+\begin{landscape}
+\begin{multicols}{3}
+
+\section{Process Models}
+\subsection{Agile}
+\begin{itemize}
+    \item Embrace change -- requirements never fixed
+    \item Deliver early and deliver often
+\end{itemize}
+\subsection{Lean}
+\begin{itemize}
+    \item Think big, act small, fail fast
+\end{itemize}
+
+\section{Ethics}
+\subsection{Australian Computer Society (ACS)}
+\begin{itemize}
+    \item Primary of Public Interest
+    \item Enhancement of Quality of Life
+    \item Honesty
+    \item Competence
+    \item Professional Development
+    \item Professionalism
+\end{itemize}
+
+\section{Requirements}
+\subsection{Functional Requirements}
+\begin{itemize}
+    \item Requirements (or capabilities) for functions (specific behaviour) that must be performed by the system
+    \item Primary focus of most requirements activities
+\end{itemize}
+\subsection{Non-Functional Requirements}
+Constraints on performance or quality
+\begin{itemize}
+    \item Product Properties -- Requirements on the behaviour of the product (min 8 transactions per second)
+    \item Process Properties -- Requirements on the practices used to develop / produce the system (Follow a standard)
+\end{itemize}
+
+\section{Elicitation}
+\subsection{Interviews}
+Effective for understanding problem and eliciting general requirements
+\subsection{Workshops}
+Multiple stakeholders; resolve conflicting requirements, quickly gather broad system usage
+\subsection{Focus Groups}
+Broad stakeholder representation. Gather broad-based ideas
+\subsection{Observations}
+Time consuming. Users often cannot describe everything they do.
+\subsection{Questionnaires}
+Inexpensive and easily administered to remote sites. Good questionnaires difficult to write
+\subsection{System Interface Analysis}
+Look at other system's functionality
+\subsection{User Interface Analysis}
+Study existing systems. What should be replicated and avoided
+\subsection{Document Analysis}
+Existing system documentation. Industry standards or legislation
+
+\section{Use Cases}
+\subsection{$<<$include$>>$ relationship}
+Factor out common behaviour in use cases (scenario always uses included steps)
+\subsection{$<<$extend$>>$ relationship}
+Factors out optional behaviour in use cases (when there are optional or uncommon steps)
+
+\section{Prioritisation}
+\subsection{MoSCoW}
+Must have, Should have, Could have, Won't have
+
+\section{Review}
+\subsection{Types of Reviews}
+\subsubsection{Technical Review}
+Review for conformance to standards or achievement of project milestones
+\subsubsection{Software (Fagan) Inspection}
+Peer review with formal process. Focus on defect detection and description
+\subsubsection{Structured Walkthrough}
+Less formal than inspection. No formal data collection
+\subsubsection{Audit}
+External review of work product. Usually late in the process
+\subsection{Inspection Participants}
+\subsubsection{Moderator}
+Responsible for leading inspection process
+\subsubsection{Recorder}
+Keeps records of all significant inspection results
+\subsubsection{Producer}
+Responsible for work under review
+\subsubsection{Reader}
+Presents work instead of producer in formal inspection
+\subsubsection{Reviewers}
+Directly concerned with, and aware of work under review
+\subsection{Inspection Process}
+Request $\rightarrow$ Entry $\rightarrow$ Planning $\rightarrow$ Overview (optional) $\rightarrow$ Preparation $\rightarrow$ Inspection Meeting $\rightarrow$ Rework $\rightarrow$ Follow-up $\rightarrow$ Exit $\rightarrow$ Release
+\subsection{Issue Classification}
+Major, Minor, Grammatical, Questions
+
+\end{multicols}
+\end{landscape}
+\end{document}
